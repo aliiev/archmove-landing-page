@@ -24,6 +24,9 @@ module.exports = {
           '800': '#b10b02',
           '900': '#790802'
         }
+      },
+      backgroundImage: {
+        'hero': 'url("./resources/images/hero.jpg")'
       }
     }
   },
