@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Logo from '../resources/Logo.svg'
-import MenuIcon from '../resources/icons/Menu.svg'
 
 const Navbar = () => {
   const [ isOpen, setOpen ] = useState(false)
@@ -12,7 +11,9 @@ const Navbar = () => {
           <img className="h-7" src={ Logo } alt="Archmove" />
         </a>
         <button className="block md:hidden p-2" onClick={ () => setOpen(!isOpen) }>
-          <img src={ MenuIcon } alt="Toggle menu" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path id="primary" d="M9,18H21M3,12H21M3,6H15" style={{ fill: 'none', stroke: '#525252', strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: 2 }}></path>
+          </svg>
         </button>
       </div>
       <div className={ `absolute md:relative ${ isOpen ? 'flex' : 'hidden' } md:flex flex-col md:flex-row justify-between items-center gap-3 bg-white border-b md:border-none w-full top-full py-6 md:py-0` }>
