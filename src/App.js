@@ -3,6 +3,7 @@ import Hero from './sections/Hero'
 import Gallery from './sections/Gallery'
 import About from './sections/About'
 import Feedback from './sections/Feedback'
+import Consultation from './sections/Consultation'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Gallery />
       <About />
       <Feedback />
+      <Consultation />
     </div>
   )
 }
