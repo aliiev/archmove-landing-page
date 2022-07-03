@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './sections/Hero'
 import Gallery from './sections/Gallery'
+import About from './sections/About'
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <Gallery />
+      <About />
     </div>
   )
 }
