@@ -1,3 +1,6 @@
+import Button from '../components/Button'
+import AboutItem from '../components/AboutItem'
+
 import AboutImg from '../resources/images/about.jpg'
 import ShieldIcon from '../resources/icons/shield.svg'
 import FeesIcon from '../resources/icons/fees.svg'
@@ -27,17 +30,9 @@ const About = () => (
         </div>
         <div className="flex flex-col items-center md:items-start gap-8 md:gap-6 lg:gap-8 2xl:gap-12 w-full">
           { list.map((item, i) => (
-            <div key={ i } className="flex flex-col md:flex-row justify-between items-center md:items-start gap-3 md:gap-6 2xl:gap-9">
-              <img className="w-10 md:w-8 2xl:w-12" src={ item.icon } alt="*" />
-              <div className="text-center md:text-left">
-                <h4 className="text-base 2xl:text-lg text-black font-bold">{ item.title }</h4>
-                <p className="text-sm md:text-base md:text-sm 2xl:text-lg mt-0 md:mt-2">{ item.content }</p>
-              </div>
-            </div>
+            <AboutItem key={ i } title={ item.title } content={ item.content } icon={ item.icon } />
           )) }
-          <button className="bg-primary hover:bg-primary-400 rounded text-sm 2xl:text-base text-white font-semibold uppercase w-full lg:w-auto mx-auto lg:mt-3 2xl:mt-8 px-8 py-5">
-            Free Consultation
-          </button>
+          <Button text="Free Consultation" className="uppercase mx-auto" />
         </div>
       </div>
     </div>
