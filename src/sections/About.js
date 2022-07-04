@@ -20,7 +20,7 @@ const list = [{
   icon: EscortIcon
 }]
 
-const About = () => (
+const About = ({ showModal }) => (
   <section className="py-6 md:py-8 lg:py-12">
     <div className="container mx-auto px-6 md:px-12 2xl:px-32">
       <h2 className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-black font-serif font-extralarge leading-tight">Build your needs <br className="hidden md:block" /> with Archmove</h2>
@@ -32,7 +32,7 @@ const About = () => (
           { list.map((item, i) => (
             <AboutItem key={ i } title={ item.title } content={ item.content } icon={ item.icon } />
           )) }
-          <Button text="Free Consultation" className="uppercase mx-auto" />
+          <Button text="Free Consultation" className="uppercase mx-auto" onClick={ showModal } />
         </div>
       </div>
     </div>

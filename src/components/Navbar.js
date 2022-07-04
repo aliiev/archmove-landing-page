@@ -26,8 +26,8 @@ const Navbar = () => {
             )) }
           </ul>
           <div className="flex justify-between items-center gap-4 shrink-0 w-full md:w-auto">
-            <a className="bg-transparent rounded text-sm text-center text-neutral-600 hover:text-black font-semibold w-full md:w-auto md:px-4 lg:px-6 py-3 md:py-3 lg:py-4" href="/">Sign In</a>
-            <a className="bg-primary hover:bg-primary-400 rounded text-sm text-center text-white font-semibold w-full md:w-auto md:px-4 lg:px-6 py-3 md:py-3 lg:py-4" href="/">Sign Up</a>
+            <a className="bg-transparent rounded text-sm text-center text-neutral-600 hover:text-black font-semibold w-full md:w-auto md:px-4 lg:px-6 py-3 md:py-3 lg:py-3.5" href="/">Sign In</a>
+            <a className="bg-primary hover:bg-primary-400 rounded text-sm text-center text-white font-semibold w-full md:w-auto md:px-4 lg:px-6 py-3 md:py-3 lg:py-3.5" href="/">Sign Up</a>
           </div>
         </div>
       </div>
