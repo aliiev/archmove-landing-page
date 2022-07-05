@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': [ 'Inter', ...defaultTheme.fontFamily.serif ],
-        'serif': [ 'Playfair Display', ...defaultTheme.fontFamily.serif ]
+        'serif': [ 'New York Extra Large', ...defaultTheme.fontFamily.serif ]
       },
       colors: {
         primary: {
