@@ -1,9 +1,8 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import Input from './Input'
-import Textarea from './Textarea'
-import Button from './Button'
-import AlertImage from '../resources/images/alert.jpg'
+import { Input, Textarea, Button } from './'
+import { AlertImg } from '../resources/images/'
+import { CloseIcon } from '../resources/icons/'
 
 const Alert = ({ isOpen, closeModal }) => {
   const [ isSent, setIsSent ] = useState(false)
@@ -20,13 +19,10 @@ const Alert = ({ isOpen, closeModal }) => {
               <Transition.Child as={ Fragment }enter="ease-out duration-300" enterFrom="opacity-0 scale-95" enterTo="opacity-100 scale-100" leave="ease-in duration-200" leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-95">
                 <Dialog.Panel className="relative flex flex-col md:flex-row justify-start md:justify-between items-center bg-white rounded-lg text-left align-middle w-full h-full lg:h-3/4 2xl:h-2/3 transform shadow-xl transition-all overflow-auto md:overflow-hidden">
                   <button className="absolute bg-neutral-100 hover:bg-neutral-50 rounded top-6 md:top-10 right-6 md:right-10 p-2 md:p-3 lg:p-3.5" onClick={ closeModal }>
-                    <svg className="stroke-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                      <line x1="19" y1="19" x2="5" y2="5" style={{ fill: 'none', strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: 2 }}></line>
-                      <line x1="19" y1="5" x2="5" y2="19" style={{ fill: 'none', strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: 2 }}></line>
-                    </svg>
+                    <CloseIcon className="stroke-primary" />
                   </button>
                   <div className="w-full md:w-1/2 lg:w-2/5 shrink-0 h-48 md:h-full">
-                    <img className="w-full h-full object-cover" src={ AlertImage } alt="Contact form" />
+                    <img className="w-full h-full object-cover" src={ AlertImg } alt="Contact form" />
                   </div>
                   <div className="w-full p-6 md:p-10">
                     <h2 className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-black font-serif font-extralarge leading-tight">Contact Us</h2>

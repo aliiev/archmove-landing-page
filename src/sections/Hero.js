@@ -1,4 +1,4 @@
-import Button from '../components/Button'
+import { Button } from '../components'
 
 const Hero = ({ showModal }) => (
   <section className="py-6 md:py-8 lg:py-12">

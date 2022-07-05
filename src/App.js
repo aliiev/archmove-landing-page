@@ -1,30 +1,18 @@
-import { useState } from 'react'
-import Navbar from './components/Navbar'
-import Alert from './components/Alert'
-import Hero from './sections/Hero'
-import Gallery from './sections/Gallery'
-import About from './sections/About'
-import Feedback from './sections/Feedback'
-import Consultation from './sections/Consultation'
-import Partners from './sections/Partners'
-import Footer from './sections/Footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Home, SignIn, SignUp } from './pages'
+import { Navbar } from './components'
+import { Footer } from './sections'
 
-const App = () => {
-  const [ modal, setModal ] = useState(false)
-
-  return (
-    <div>
-      <Navbar />
-      <Alert isOpen={ modal } closeModal={ () => setModal(false) } />
-      <Hero showModal={ () => setModal(true) } />
-      <Gallery />
-      <About showModal={ () => setModal(true) } />
-      <Feedback />
-      <Consultation showModal={ () => setModal(true) } />
-      <Partners />
-      <Footer />
-    </div>
-  )
-}
+const App = () => (
+  <Router>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={ <Home /> } />
+      <Route path="/sign-in" element={ <SignIn /> } />
+      <Route path="/sign-up" element={ <SignUp /> } />
+    </Routes>
+    <Footer />
+  </Router>
+)
 
 export default App

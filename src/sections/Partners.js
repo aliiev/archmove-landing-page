@@ -1,8 +1,4 @@
-import PartnerImg1 from '../resources/images/partners/logo-1.png'
-import PartnerImg2 from '../resources/images/partners/logo-2.png'
-import PartnerImg3 from '../resources/images/partners/logo-3.png'
-import PartnerImg4 from '../resources/images/partners/logo-4.png'
-import PartnerImg5 from '../resources/images/partners/logo-5.png'
+import { PartnerImg1, PartnerImg2, PartnerImg3, PartnerImg4, PartnerImg5 } from '../resources/images'
 
 const Partners = () => (
   <section className="border-b py-6 md:py-8 lg:py-12">

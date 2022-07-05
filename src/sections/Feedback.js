@@ -1,6 +1,5 @@
 import useEmblaCarousel from 'embla-carousel-react'
-import FeedbackSlide from '../components/FeedbackSlide'
-import SliderControl from '../components/SliderControl'
+import { FeedbackSlide, SliderControl } from '../components'
 
 const feedbacks = [{
   author: 'Adam Morph',

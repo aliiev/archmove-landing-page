@@ -1,11 +1,6 @@
 import useEmblaCarousel from 'embla-carousel-react'
-import SliderControl from '../components/SliderControl'
-import GallerySlide from '../components/GallerySlide'
-
-import GalleryImg1 from '../resources/images/gallery/img-01.jpg'
-import GalleryImg2 from '../resources/images/gallery/img-02.jpg'
-import GalleryImg3 from '../resources/images/gallery/img-03.jpg'
-import GalleryImg4 from '../resources/images/gallery/img-04.jpg'
+import { SliderControl, GallerySlide } from '../components'
+import { GalleryImg1, GalleryImg2, GalleryImg3, GalleryImg4 } from '../resources/images'
 
 const Gallery = () => {
   const [ viewportRef, embla ] = useEmblaCarousel({ align: 'start' })

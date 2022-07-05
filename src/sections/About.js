@@ -1,10 +1,6 @@
-import Button from '../components/Button'
-import AboutItem from '../components/AboutItem'
-
-import AboutImg from '../resources/images/about.jpg'
-import ShieldIcon from '../resources/icons/shield.svg'
-import FeesIcon from '../resources/icons/fees.svg'
-import EscortIcon from '../resources/icons/escort.svg'
+import { Button, AboutItem } from '../components/'
+import { AboutImg } from '../resources/images'
+import { ShieldIcon, FeesIcon, EscortIcon } from '../resources/icons'
 
 const list = [{
   title: '100% guaranteed project completion',

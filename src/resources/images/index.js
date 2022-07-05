@@ -1,0 +1,15 @@
+export const AboutImg = require('./backgrounds/about.jpg')
+export const AlertImg = require('./backgrounds/alert.jpg')
+export const ConsultationImg = require('./backgrounds/consultation.png')
+export const HeroImg = require('./backgrounds/hero.jpg')
+
+export const GalleryImg1 = require('./gallery/img-01.jpg')
+export const GalleryImg2 = require('./gallery/img-02.jpg')
+export const GalleryImg3 = require('./gallery/img-03.jpg')
+export const GalleryImg4 = require('./gallery/img-04.jpg')
+
+export const PartnerImg1 = require('./partners/logo-1.png')
+export const PartnerImg2 = require('./partners/logo-2.png')
+export const PartnerImg3 = require('./partners/logo-3.png')
+export const PartnerImg4 = require('./partners/logo-4.png')
+export const PartnerImg5 = require('./partners/logo-5.png')

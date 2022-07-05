@@ -1,5 +1,5 @@
-import Button from '../components/Button'
-import ConsultationImg from '../resources/images/consultation.png'
+import { Button } from '../components'
+import { ConsultationImg } from '../resources/images'
 
 const Consultation = ({ showModal }) => (
   <section className="py-6 md:py-8 lg:py-12">

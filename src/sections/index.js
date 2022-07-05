@@ -1,0 +1,7 @@
+export { default as About } from './About'
+export { default as Consultation } from './Consultation'
+export { default as Feedback } from './Feedback'
+export { default as Footer } from './Footer'
+export { default as Gallery } from './Gallery'
+export { default as Hero } from './Hero'
+export { default as Partners } from './Partners'
