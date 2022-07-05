@@ -13,3 +13,8 @@ export const PartnerImg2 = require('./partners/logo-2.png')
 export const PartnerImg3 = require('./partners/logo-3.png')
 export const PartnerImg4 = require('./partners/logo-4.png')
 export const PartnerImg5 = require('./partners/logo-5.png')
+
+export const SignInImg1 = require('./sign-in/img-1.jpg')
+export const SignInImg2 = require('./sign-in/img-2.jpg')
+export const SignInImg3 = require('./sign-in/img-3.jpg')
+export const SignInImg4 = require('./sign-in/img-4.jpg')
