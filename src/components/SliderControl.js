@@ -22,10 +22,10 @@ const SliderControl = ({ embla, className }) => {
   
   return (
     <div className={ className }>
-      <button className={ `${ prevBtnEnabled ? 'bg-neutral-100 hover:bg-neutral-50' : 'bg-none' } rounded p-2 md:p-3 lg:p-3.5` } onClick={ scrollPrev } disabled={ !prevBtnEnabled }>
+      <button className={ `${ prevBtnEnabled ? 'bg-neutral-100 hover:bg-neutral-50' : 'bg-none' } rounded p-2 md:p-3 lg:p-3.5 transition-colors` } onClick={ scrollPrev } disabled={ !prevBtnEnabled }>
         <LeftIcon className={ prevBtnEnabled ? 'stroke-primary' : 'stroke-neutral-600' } />
       </button>
-      <button className={ `${ nextBtnEnabled ? 'bg-neutral-100 hover:bg-neutral-50' : 'bg-none' } rounded p-2 md:p-3 lg:p-3.5` } onClick={ scrollNext } disabled={ !nextBtnEnabled }>
+      <button className={ `${ nextBtnEnabled ? 'bg-neutral-100 hover:bg-neutral-50' : 'bg-none' } rounded p-2 md:p-3 lg:p-3.5 transition-colors` } onClick={ scrollNext } disabled={ !nextBtnEnabled }>
         <RightIcon className={ nextBtnEnabled ? 'stroke-primary' : 'stroke-neutral-600' } />
       </button>
     </div>

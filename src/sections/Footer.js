@@ -7,7 +7,7 @@ const Footer = () => (
       <ul className="flex flex-row flex-wrap justify-center md:justify-start items-center gap-x-12 gap-y-3 md:gap-y-0 order-last md:order-none mt-6 md:mt-0">
         { [ 'About Us', 'How it Works', 'FAQ', 'Contact Us', 'Privacy Policy' ].map((link, i) => (
           <li key={ i } className="">
-            <Link className="text-sm md:text-xs 2xl:text-sm text-neutral-600 hover:text-black font-semibold" to="/">{ link }</Link>
+            <Link className="text-sm md:text-xs 2xl:text-sm text-neutral-600 hover:text-black font-semibold transition-colors" to="/">{ link }</Link>
           </li>
         )) }
       </ul>

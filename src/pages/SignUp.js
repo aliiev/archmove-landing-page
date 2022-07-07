@@ -16,7 +16,7 @@ const SignUp = () => {
             <Button text="Get started" />
             <div className="text-sm text-center">
               <span className="text-black">Already have an account? </span>
-              <Link className="text-primary font-medium" to="/sign-in">Log in</Link>
+              <Link className="text-primary hover:text-primary-400 font-medium transition-colors" to="/sign-in">Log in</Link>
             </div>
           </div>
         </div>

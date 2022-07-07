@@ -14,12 +14,12 @@ const SignIn = () => {
             <Input id="password" type="password" title="Your Password" placeholder="Password" />
             <div className="flex justify-between items-center">
               <Checkbox id="remember" title="Remember me" checked={ false } />
-              <Link className="text-sm text-primary font-medium ml-2" to="/sign-in">Forgot password</Link>
+              <Link className="text-sm text-primary hover:text-primary-400 font-medium ml-2 transition-colors" to="/sign-in">Forgot password</Link>
             </div>
             <Button text="Login" />
             <div className="text-sm text-center">
               <span className="text-black">Don't have an account? </span>
-              <Link className="text-primary font-medium" to="/sign-up">Sign up for free</Link>
+              <Link className="text-primary hover:text-primary-400 font-medium transition-colors" to="/sign-up">Sign up for free</Link>
             </div>
           </div>
         </div>

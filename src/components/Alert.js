@@ -10,15 +10,15 @@ const Alert = ({ isOpen, closeModal }) => {
   return (
     <>
       <Transition appear show={ isOpen } as={ Fragment }>
-        <Dialog as="div" className="relative z-30" onClose={ () => {} }>
+        <Dialog as="div" className="relative z-30" onClose={ closeModal }>
           <Transition.Child as={ Fragment } enter="ease-out duration-300" enterFrom="opacity-0" enterTo="opacity-100" leave="ease-in duration-200" leaveFrom="opacity-100" leaveTo="opacity-0">
             <div className="fixed inset-0 bg-black bg-opacity-25"></div>
           </Transition.Child>
           <div className="fixed inset-0 overflow-y-auto">
             <div className="md:container flex justify-center items-center text-center h-full mx-auto px-0 md:px-12 2xl:px-32">
-              <Transition.Child as={ Fragment }enter="ease-out duration-300" enterFrom="opacity-0 scale-95" enterTo="opacity-100 scale-100" leave="ease-in duration-200" leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-95">
+              <Transition.Child as={ Fragment } enter="ease-out duration-300" enterFrom="opacity-0 scale-95" enterTo="opacity-100 scale-100" leave="ease-in duration-200" leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-95">
                 <Dialog.Panel className="relative flex flex-col md:flex-row justify-start md:justify-between items-center bg-white rounded-lg text-left align-middle w-full h-full lg:h-3/4 2xl:h-2/3 transform shadow-xl transition-all overflow-auto md:overflow-hidden">
-                  <button className="absolute bg-neutral-100 hover:bg-neutral-50 rounded top-6 md:top-10 right-6 md:right-10 p-2 md:p-3 lg:p-3.5" onClick={ closeModal }>
+                  <button className="absolute bg-neutral-100 hover:bg-neutral-50 rounded top-6 md:top-10 right-6 md:right-10 p-2 md:p-3 lg:p-3.5 transition-colors" onClick={ closeModal }>
                     <CloseIcon className="stroke-primary" />
                   </button>
                   <div className="w-full md:w-1/2 lg:w-2/5 shrink-0 h-48 md:h-full">
