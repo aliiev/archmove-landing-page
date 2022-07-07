@@ -18,3 +18,7 @@ export const SignInImg1 = require('./sign-in/img-1.jpg')
 export const SignInImg2 = require('./sign-in/img-2.jpg')
 export const SignInImg3 = require('./sign-in/img-3.jpg')
 export const SignInImg4 = require('./sign-in/img-4.jpg')
+
+export const AdamMorphImg = require('./feedback/adam-morph.jpg')
+export const JohnMorrisImg = require('./feedback/john-morris.jpg')
+export const SamHollisImg = require('./feedback/sam-hollis.jpg')

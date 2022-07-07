@@ -1,19 +1,6 @@
 import useEmblaCarousel from 'embla-carousel-react'
 import { FeedbackSlide, SliderControl } from '../components'
-
-const feedbacks = [{
-  author: 'Adam Morph',
-  company: 'CEO Alfatech',
-  content: 'We just wanted to thank you for this fantastic website! We are so grateful for being able to advertise our Petite cabin and receive feedback from people from all over the U.S. and even further.'
-}, {
-  author: 'Sam Hollis',
-  company: 'CEO Democrain',
-  content: 'We can\'t understand how we\'ve been living without Archmove. Really good. Absolutely wonderful! Archmove has got everything I need.'
-}, {
-  author: 'John Morris',
-  company: 'CEO Johndale',
-  content: 'Archmove should be nominated for service of the year. It\'s exactly what I\'ve been looking for. I\'d be lost without Archmove. Archmove is both attractive and highly adaptable.'
-}]
+import { feedbackData } from '../data'
 
 const Feedback = () => {
   const [ viewportRef, embla ] = useEmblaCarousel({ align: 'start' })
@@ -26,7 +13,7 @@ const Feedback = () => {
           <div></div>
           <div className="col-span-2 overflow-hidden mt-6 md:mt-10 md:-ml-24" ref={ viewportRef }>
             <div className="flex flex-row gap-10 cursor-ew-resize">
-              { feedbacks.map((feedback, i) => (
+              { feedbackData.map((feedback, i) => (
                 <FeedbackSlide key={ i } content={ feedback.content } author={ feedback.author } company={ feedback.company } />
               )) }
             </div>

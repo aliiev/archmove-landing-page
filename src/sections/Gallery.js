@@ -1,6 +1,6 @@
 import useEmblaCarousel from 'embla-carousel-react'
 import { SliderControl, GallerySlide } from '../components'
-import { GalleryImg1, GalleryImg2, GalleryImg3, GalleryImg4 } from '../resources/images'
+import { galleryData } from '../data'
 
 const Gallery = () => {
   const [ viewportRef, embla ] = useEmblaCarousel({ align: 'start' })
@@ -17,8 +17,8 @@ const Gallery = () => {
         </div>
         <div className="mt-4 md:mt-6 lg:mt-10 overflow-hidden" ref={ viewportRef }>
           <div className="flex justify-start items-center gap-6 md:gap-6 lg:gap-10 h-80 md:h-80 lg:h-96 cursor-ew-resize">
-            { [ GalleryImg1, GalleryImg2, GalleryImg3, GalleryImg4 ].map((image, i) => (
-              <GallerySlide key={ i } image={ image } alt={ i } />
+            { galleryData.map((image, i) => (
+              <GallerySlide key={ i } image={ image } />
             )) }          
           </div>
         </div>

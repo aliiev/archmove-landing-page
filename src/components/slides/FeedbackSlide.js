@@ -1,4 +1,4 @@
-import { BlockquoteIcon } from '../resources/icons'
+import { BlockquoteIcon } from '../../resources/icons'
 
 const FeedbackSlide = ({ content, author, company }) => (
   <div className="relative flex flex-col md:flex-row items-start gap-3 md:gap-12 w-full shrink-0">

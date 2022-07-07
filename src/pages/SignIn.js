@@ -1,34 +1,8 @@
-import { useRef } from 'react'
 import { Link } from 'react-router-dom'
-import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
-import { Input, Checkbox, Button, SignInSlide } from '../components'
-import { SignInImg1, SignInImg2, SignInImg3, SignInImg4 } from '../resources/images'
-
-const slides = [{
-  text: 'Build safe, comfortable and transparent with a project management application with a joint account',
-  image: SignInImg1
-}, {
-  text: 'There are no hidden costs. The value of the offer you get is the value you paid',
-  image: SignInImg2
-}, {
-  text: 'Monitor reports from the Arsitag team who check directly in the field',
-  image: SignInImg3
-}, {
-  text: 'Realize your dream with Archmove',
-  image: SignInImg4
-}]
+import { Input, Checkbox, Button, AutoCarousel, SignInSlide } from '../components'
+import { signinData } from '../data'
 
 const SignIn = () => {
-  const autoplay = useRef(
-    Autoplay(
-      { delay: 5000, stopOnInteraction: false },
-      emblaRoot => emblaRoot.parentElement
-    )
-  )
-
-  const [ viewportRef ] = useEmblaCarousel({ loop: true, draggable: false }, [ autoplay.current ])
-
   return (
     <section className="py-6 md:py-8 lg:py-12">
       <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-10 lg:gap-20 2xl:gap-40 container mx-auto px-6 md:px-12 2xl:px-32">
@@ -49,13 +23,7 @@ const SignIn = () => {
             </div>
           </div>
         </div>
-        <div className="w-full overflow-hidden" ref={ viewportRef }>
-          <div className="flex justify-start items-center gap-6 md:gap-6 lg:gap-10 h-80 md:h-full lg:h-[75vh]">
-            { slides.map((slide, i) => (
-              <SignInSlide key={ i } text={ slide.text } image={ slide.image } />
-            )) }
-          </div>
-        </div>
+        <AutoCarousel slide={ SignInSlide } data={ signinData } />
       </div>
     </section>
   )
