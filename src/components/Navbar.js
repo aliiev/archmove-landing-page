@@ -1,7 +1,22 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import Logo from '../resources/Logo.svg'
 import { MenuIcon } from '../resources/icons'
+
+const links = [{
+  title: 'Design Gallery',
+  url: '/#gallery'
+}, {
+  title: 'Our Features',
+  url: '/#features'
+}, {
+  title: 'Feedback',
+  url: '/#feedback'
+}, {
+  title: 'Consultation',
+  url: '/#consultation'
+}]
 
 const Navbar = () => {
   const [ isOpen, setOpen ] = useState(false)
@@ -19,9 +34,9 @@ const Navbar = () => {
         </div>
         <div className={ `absolute md:relative ${ isOpen ? 'flex' : 'hidden' } md:flex flex-col md:flex-row justify-between items-center gap-3 bg-white border-b md:border-none w-full top-full pb-6 md:py-0` }>
           <ul className="md:flex flex-col md:flex-row items-center md:gap-3 lg:gap-12 w-full">
-            { [ 'Design Gallery', 'List of Architect', 'Articles', 'How it Works' ].map((link, i) => (
+            { links.map((link, i) => (
               <li key={ i } className="w-full md:w-auto">
-                <Link className="block md:inline border-b md:border-none text-sm text-center text-neutral-600 hover:text-black py-3 md:py-0" to="/">{ link }</Link>
+                <HashLink className="block md:inline border-b md:border-none text-sm text-center text-neutral-600 hover:text-black py-3 md:py-0" to={ link.url } smooth>{ link.title }</HashLink>
               </li>
             )) }
           </ul>

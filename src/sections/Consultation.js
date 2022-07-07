@@ -2,7 +2,7 @@ import { Button } from '../components'
 import { ConsultationImg } from '../resources/images'
 
 const Consultation = ({ showModal }) => (
-  <section className="py-6 md:py-8 lg:py-12">
+  <section id="consultation" className="py-6 md:py-8 lg:py-12">
     <div className="container flex flex-col md:flex-row items-center gap-6 md:gap-16 lg:gap-32 mx-auto px-6 md:px-12 2xl:px-32">
       <div className="w-full md:w-2/5 shrink-0">
         <img className="w-full h-70 md:h-auto object-contain" src={ ConsultationImg } alt="Consultation" />

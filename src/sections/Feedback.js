@@ -6,7 +6,7 @@ const Feedback = () => {
   const [ viewportRef, embla ] = useEmblaCarousel({ align: 'start' })
 
   return (
-    <section className="bg-neutral-50 py-6 md:py-8 lg:py-12">
+    <section id="feedback" className="bg-neutral-50 py-6 md:py-8 lg:py-12">
       <div className="container mx-auto px-6 md:px-12 2xl:px-32">
         <h2 className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-black font-serif font-extralarge leading-tight">Sound Too Good <br className="hidden md:block" /> To Be True?</h2>
         <div className="relative grid grid-cols-1 md:grid-cols-3 md:gap-x-8 lg:gap-x-14">

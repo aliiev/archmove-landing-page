@@ -17,7 +17,7 @@ const list = [{
 }]
 
 const About = ({ showModal }) => (
-  <section className="py-6 md:py-8 lg:py-12">
+  <section id="features" className="py-6 md:py-8 lg:py-12">
     <div className="container mx-auto px-6 md:px-12 2xl:px-32">
       <h2 className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-black font-serif font-extralarge leading-tight">Build your needs <br className="hidden md:block" /> with Archmove</h2>
       <div className="flex flex-col md:flex-row justify-between md:items-stretch lg:items-center gap-6 md:gap-10 lg:gap-20 2xl:gap-40 mt-4 md:mt-6 lg:mt-10">

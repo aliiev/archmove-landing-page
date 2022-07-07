@@ -6,7 +6,7 @@ const Gallery = () => {
   const [ viewportRef, embla ] = useEmblaCarousel({ align: 'start' })
 
   return (
-    <section className="py-6 md:py-8 lg:py-12">
+    <section id="gallery" className="py-6 md:py-8 lg:py-12">
       <div className="container mx-auto px-6 md:px-12 2xl:px-32">
         <div className="grid grid-cols-3 md:gap-x-8 lg:gap-x-14">
           <div></div>
